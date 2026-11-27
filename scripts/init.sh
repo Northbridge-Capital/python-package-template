@@ -25,5 +25,7 @@ grep -rl "REPLACE_ME\|package_name" --exclude-dir=.git --exclude-dir=scripts . |
   perl -pi -e 's/REPLACE_ME_DESCRIPTION/$ENV{DESCRIPTION}/ge; s/REPLACE_ME/$ENV{REPO_NAME}/ge; s/package_name/$ENV{IMPORT_NAME}/ge' "$file"
 done
 
+uv lock
+
 echo "Renamed to ${REPO_NAME} (import name: ${IMPORT_NAME})."
-echo "Review the diff, run 'uv sync', then delete scripts/init.sh and commit."
+echo "Review the diff, then delete scripts/init.sh and commit."
