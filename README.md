@@ -30,7 +30,10 @@ dependency: everything here is yours to change once you've created a repo from t
 - `.github/workflows/release.yml`: tag `v*` on `main` to build, publish a GitHub Release, and
   publish to PyPI via trusted publishing (no stored token). Also runnable by hand as a dry run.
 - `Justfile`: `just sync` / `just lint` / `just test`.
-- `CONTRIBUTING.md`, `SECURITY.md`, `CHANGELOG.md`: process docs, mostly generic as written.
+- `CONTRIBUTING.md`, `SECURITY.md`, `CHANGELOG.md`, `CODE_OF_CONDUCT.md`: process docs, mostly
+  generic as written.
+- `.github/ISSUE_TEMPLATE/`, `.github/PULL_REQUEST_TEMPLATE.md`: generic issue/PR forms --
+  tighten them once the package has real, package-specific things to ask about.
 
 ## What's deliberately not included
 
