@@ -11,6 +11,14 @@ requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE"]
 authors = [{ name = "Northbridge Capital" }]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Typing :: Typed",
+]
 
 [project.urls]
 Homepage = "https://github.com/Northbridge-Capital/REPLACE_ME"
@@ -34,7 +42,10 @@ line-length = 100
 target-version = "py311"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I", "B", "UP", "DTZ", "SIM", "PT", "RUF", "C4", "PIE"]
+select = ["E", "F", "W", "I", "B", "UP", "DTZ", "S", "SIM", "PT", "RUF", "C4", "PIE"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101"]
 
 [tool.ruff.format]
 line-ending = "lf"
