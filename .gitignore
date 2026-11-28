@@ -8,3 +8,5 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+docs/_build/
+docs/generated/

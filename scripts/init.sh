@@ -29,3 +29,6 @@ uv lock
 
 echo "Renamed to ${REPO_NAME} (import name: ${IMPORT_NAME})."
 echo "Review the diff, then delete scripts/init.sh and commit."
+echo "Then replace the sample greet() function and its entry in docs/api.rst with your API."
+echo "The Docs workflow publishes to https://northbridge-capital.github.io/${REPO_NAME}/ once GitHub"
+echo "Pages is enabled (Terraform does this for repos provisioned in stacks/github/org)."

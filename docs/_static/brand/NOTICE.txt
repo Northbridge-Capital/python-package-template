@@ -1,0 +1,3 @@
+The Northbridge Capital name and logos in this folder are trademarks of Northbridge Capital.
+They are used here to brand the documentation site and are not licensed under this
+repository's MIT license: do not use them to imply endorsement of a derivative work.
