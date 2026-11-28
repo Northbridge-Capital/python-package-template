@@ -1,3 +1,9 @@
-"""REPLACE_ME_DESCRIPTION"""
+"""The REPLACE_ME package."""
 
-__version__ = "0.1.0"
+from importlib.metadata import version
+
+from .greeting import greet
+
+__version__ = version("REPLACE_ME")
+
+__all__ = ["__version__", "greet"]

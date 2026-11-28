@@ -1,0 +1,5 @@
+/* The company lockup is a wide wordmark: size it by height so it fits the navigation bar. */
+.navbar-brand img {
+  height: 1.5rem;
+  width: auto;
+}
