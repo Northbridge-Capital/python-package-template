@@ -34,7 +34,7 @@ dependency: everything here is yours to change once you've created a repo from t
 - `.github/workflows/release.yml`: tag `v*` on `main` to build, publish a GitHub Release, and
   publish to PyPI via trusted publishing (no stored token). Also runnable by hand as a dry run.
 - `docs/` and `.github/workflows/docs.yml`: a Sphinx API reference generated from the
-  docstrings (`numpydoc`, `pydata-sphinx-theme`, Northbridge branding), built strictly in CI and
+  docstrings (`numpydoc`, `pydata-sphinx-theme`), built strictly in CI and
   published to GitHub Pages on every push to `main`. `tests/test_docstrings.py` and
   `tests/test_api_reference.py` keep the docstrings and `docs/api.rst` complete.
 - `.github/dependabot.yml`: weekly version updates for GitHub Actions and Python dependencies,
